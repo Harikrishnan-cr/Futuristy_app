@@ -37,6 +37,7 @@ dependencies:
   http: ^0.13.5 
   get: ^4.6.5 
   fancy_shimmer_image: ^2.0.2
+  hexcolor: 
 
 dev_dependencies:
   flutter_test:

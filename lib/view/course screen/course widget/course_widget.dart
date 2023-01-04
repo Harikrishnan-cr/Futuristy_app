@@ -57,11 +57,11 @@ class TopCourseWidget extends StatelessWidget {
                     child: Text(
                       topCourseData.title.toString(), 
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(color: Colors.black, fontSize: 19),
+                      style: const TextStyle(color: Colors.black, fontSize: 19),
                       maxLines: 2,
                     )),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
@@ -71,7 +71,7 @@ class TopCourseWidget extends StatelessWidget {
                     topCourseData.price.toString(), 
                     style: TextStyle(color: greyColour),
                   ),
-                   SizedBox(
+                   const SizedBox(
                 width: 5, 
               ), 
                 ],
