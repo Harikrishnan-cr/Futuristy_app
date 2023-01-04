@@ -61,7 +61,7 @@ class CourseScreen extends StatelessWidget {
 
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.black,
-          child: Icon(Icons.line_axis_rounded),
+          child: const Icon(Icons.line_axis_rounded), 
           onPressed: () {
           return null; 
         },),
@@ -84,7 +84,7 @@ class TopCourseTile extends StatelessWidget {
       height: 230,
       child: Obx(() {
         final data = topCourceController.topCourseData;
-        return ListView(
+        return data.isNotEmpty ? ListView(
             scrollDirection: Axis.horizontal,
             children: List.generate(topCourceController.topCourseData.length,
                 (index) {
@@ -94,7 +94,7 @@ class TopCourseTile extends StatelessWidget {
                   topCourseData: data[index],
                 ),
               );
-            }));
+            })):const Center(child: CircularProgressIndicator(),); 
       }),
     );
   }
