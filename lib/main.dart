@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:futuristy/view/course%20screen/course_screen.dart';
+import 'package:futuristy/controller/const/colors/colours.dart';
+import 'package:futuristy/view/common%20screens/bottom_bar/bottom_bar.dart';
+
 import 'package:get/get.dart';
 
 void main() {
@@ -12,12 +14,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp( 
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue, 
+        canvasColor: whiteColour,
       ),
-      home: CourseScreen(),  
+      home: BottomBarScreen(),
     );
   }
 }
